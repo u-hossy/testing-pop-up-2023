@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up-Test</title>
+</head>
+<body>
+    <button onclick="reset()">Reset</button>
+    <button onclick="popup()">Click Me</button>
+</body>
+<script>
+    function reset(){
+        i=1;
+    }
+
+    function popup(){
+        window.alert(i+"回目のクリック");
+        i++;
+    }
+</script>
+</html>
