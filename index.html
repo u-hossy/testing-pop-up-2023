@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop-up-Test</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            /* border: 1px solid #ccc;
+            background-color: #eee; */
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <h1>ポップアップテスト</h1>
+
+    <p id="msg">まずは、Resetボタンを押してください</p>
+
     <button onclick="reset()">Reset</button>
     <button onclick="popup()">Click Me</button>
 </body>
 <script>
     function reset(){
         i=1;
+        document.getElementById("msg").innerHTML="次に、Click Meボタンを押すとポップアップが表示されます";
     }
 
     function popup(){
         window.alert(i+"回目のクリック");
         i++;
     }
+
 </script>
 </html>
